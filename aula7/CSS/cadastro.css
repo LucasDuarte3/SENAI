@@ -93,7 +93,7 @@ button {
     padding: 10px;
     gap: 8px;
     box-shadow: 5px;
-    background-color: var(--Preto);
+    background-color: var(--corPrimaria);
     color: var(--branco);
     cursor: pointer;
 }
