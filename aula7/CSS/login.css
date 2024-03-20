@@ -1,0 +1,102 @@
+@font-face {
+    font-family:  Jost-Italic-VariableFont_wght;
+    src: url(../fonts/Jost-Italic-VariableFont_wght.ttf);
+}
+
+@keyframes mudaCor {
+    0%{
+        color: var(--Preto);
+    }
+    25% {
+        color: rgb(11, 34, 14);
+    }
+    50%{
+        color: red;
+    }
+    75% {
+        color: rgb(0, 143, 21)
+    }
+    100%{
+        color: rgb(50, 50, 129);
+    }
+}
+
+:root{
+    --corPrimaria : rgb(10, 0, 143) ;
+    --corSecundaria : rgb(35, 35, 35) ;
+    --branco : rgb(255, 255, 255);
+    --preto : rgb(18, 18, 18);
+    --fontePrimaria : Jost-Italic-VariableFont_wght ;
+    --fonteSecundaria : 'Trebuchet MS' ;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--fonteSecundaria);
+}
+
+#page{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--corSecundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 70%;
+    height: 80%;
+    background-color: var(--branco);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+#efeito , #formulario {
+    width: 50%;
+    height: 100%;
+}
+
+#efeito{
+    background-image: url(../images/jogo.jpg);
+    background-size: cover; 
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(129,128,146,0.5170068027210885) 50%, rgba(255,255,255,1) 100%); 
+}
+
+h3{
+    margin: 5px;
+    padding: 5px;
+    animation-name: mudaCor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+#formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+input {
+    width: 70%;
+    padding: 5px;
+    border: none;
+    border-bottom: solid var(--corPrimaria) 2px;
+}
+button {
+    width: 100px;
+    padding: 10px;
+    box-shadow: 5px;
+    background-color: var(--corPrimaria);
+    color: var(--branco);
+    cursor: pointer;
+}

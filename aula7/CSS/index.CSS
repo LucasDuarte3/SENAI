@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Jost-Italic-VariableFont_wght;
+    src: url(../fonts/Jost-Italic-VariableFont_wght.ttf);
+}
+:root{
+    --corPrimaria : red ;
+    --corSecundaria : blue ;
+    --branco : rgb(255, 255, 255);
+    --preto : rgb(18, 18, 18);
+    --fontePrimaria : Jost-Italic-VariableFont_wght ;
+    --fonteSecundaria : 'Trebuchet MS' ;
+}
+body {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/IMGfundo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--fonteSecundaria);
+}
+#cabecalho {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+}
+#page{
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;       
+}
+h1{
+    padding: 5px;
+}
+#links{
+    margin: 10px;
+    padding: 10px;
+}
+#catalogo{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px auto;
+}
+.jogos{
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(234, 234, 234);
+    box-shadow: 4px 4px rgba(102, 102, 102, 0.501);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.jogos img{
+    width: 100%;
+}
+#deslogar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+}
+button {
+    justify-content: center;
+    width: 100px;;
+    padding: 10px;
+    gap: 8px;
+    box-shadow: 5px;
+    background-color: var(--preto);
+    color: var(--branco);
+    cursor: pointer;
+}
+footer {
+    background-color: rgb(29, 29, 29);
+    color: red;
+    margin: 40px;
+    padding: 40px;
+    text-align: center;
+    font-size: larger;
+}
