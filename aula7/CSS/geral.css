@@ -5,19 +5,19 @@
 
 @keyframes mudaCor {
     0%{
-        margin-left: 50px;
-        color: black;
+        color: var(--Preto);
     }
-    25%{
-        margin-left: 100px;
+    25% {
+        color: rgb(11, 34, 14);
     }
     50%{
-        margin-left: 50px;
         color: red;
     }
+    75% {
+        color: rgb(0, 143, 21)
+    }
     100%{
-        margin-left: 0px;
-        color: blue;
+        color: rgb(50, 50, 129);
     }
 }
 
@@ -72,9 +72,12 @@ main{
 }
 
 h3{
+    margin: 5px;
+    padding: 5px;
     animation-name: mudaCor;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    text-align: center;
 }
 
 #formulario form{
@@ -88,4 +91,12 @@ input {
     padding: 5px;
     border: none;
     border-bottom: solid var(--corPrimaria) 2px;
+}
+button {
+    width: 100px;
+    padding: 10px;
+    box-shadow: 5px;
+    background-color: var(--corPrimaria);
+    color: var(--branco);
+    cursor: pointer;
 }
